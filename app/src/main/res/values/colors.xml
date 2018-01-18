@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="radio_text">#8a8a8a</color>
+    <color name="bg_title">#ff1DC7D0</color>
+    <color name="themeColor">#FF9696</color>
+    <color name="white">#ffffff</color>
+    <!--mLoadingDialog colors-->
+    <color name="bg_main_gray">#F5F5F5</color>
+    <color name="colorText">#333333</color>
+    <color name="colorHintText">#999</color>
+    <color name="msg_dialog_bg">#ffffff</color>
+    <color name="msg_dialog_content">#161616</color>
+    <color name="msg_dialog_positive">#0088FF</color>
+    <color name="hint">#cccccc</color>
+    <color name="Text_gray">#999999</color>
+    <color name="background">#f2f2f2</color>
+    <color name="fg_line">#e6e6e6</color>
+
+</resources>

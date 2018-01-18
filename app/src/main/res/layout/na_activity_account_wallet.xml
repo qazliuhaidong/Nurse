@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/na_include_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:text="账户余额"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/d_28"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30px"
+                android:src="@mipmap/ico_rmb_s"
+                 />
+
+            <TextView
+                android:layout_marginLeft="30px"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="1000"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/d_42"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30px"
+            android:background="@color/fg_line" />
+
+        <RelativeLayout
+            android:id="@+id/rlTx"
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="30px"
+                android:text="提现"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/d_26"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="20px"
+                android:drawableRight="@mipmap/ico_into"
+                android:paddingRight="30px"
+                android:text="支持微信、支付宝账户"
+                android:textColor="@color/Text_gray"
+                android:textSize="@dimen/d_28"
+                 />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="16px"
+        android:textColor="@color/Text_gray"
+        android:textSize="@dimen/d_28"
+        android:text="账户收入情况" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"></android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="申请人"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_26" />
+
+        <TextView
+            android:id="@+id/mshpName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="邓虹斌"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/d_26" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/bg_main_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="平台账号"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_26" />
+
+        <TextView
+            android:id="@+id/insuranceNo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="dhb1975"
+            android:textColor="@color/colorText"
+            android:textSize="22px" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/bg_main_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="时间"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_28" />
+
+        <TextView
+            android:id="@+id/arrangeTime1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="2017-09-08 18:56"
+            android:textColor="@color/colorText"
+            android:textSize="22px" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/bg_main_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="服务项目"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_28" />
+
+        <TextView
+            android:id="@+id/productName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="基础体检套餐"
+            android:textColor="@color/colorText"
+            android:textSize="26px" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/bg_main_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="用户等级"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_28" />
+
+        <TextView
+            android:id="@+id/cardName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="金卡"
+            android:textColor="@color/colorText"
+            android:textSize="26px" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/bg_main_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="积分"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_28" />
+
+        <TextView
+            android:id="@+id/integral1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="235"
+            android:textColor="@color/colorText"
+            android:textSize="22px" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="30px"
+        android:background="@color/bg_main_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="160px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="28px"
+            android:text="备注"
+            android:textColor="#666666"
+            android:textSize="@dimen/d_28" />
+
+        <TextView
+            android:id="@+id/orderDescription1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:text="备注"
+            android:textColor="@color/colorText"
+            android:textSize="26px" />
+
+    </LinearLayout>
+</LinearLayout>

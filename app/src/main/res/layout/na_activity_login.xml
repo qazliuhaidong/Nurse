@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/login_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="蜀祥健康"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_34" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40px"
+            android:layout_marginTop="10px"
+            android:text="一站式助医平台"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_24" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_account"
+        style="@style/login_editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="80px"
+        android:drawableLeft="@mipmap/login_id"
+        android:drawablePadding="20px"
+        android:hint="输入账号"
+        android:paddingLeft="15px"
+        android:paddingRight="30px"
+        android:textColor="#666"
+        android:textColorHint="@color/hint"
+        android:textSize="@dimen/d_26" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/login_editText_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="40px"
+        android:drawableLeft="@mipmap/login_key"
+        android:drawablePadding="20px"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="15px"
+        android:paddingRight="30px"
+        android:textColor="#666"
+        android:textColorHint="@color/hint"
+        android:textSize="@dimen/d_26" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="50px"
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/bg_shape_ok"
+        android:gravity="center"
+        android:padding="26px"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/d_28" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="40px"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/d_26"
+            android:text="忘记密码" />
+
+        <TextView
+            android:id="@+id/tvReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="40px"
+            android:textSize="@dimen/d_26"
+            android:textColor="@color/colorText"
+            android:text="手机注册" />
+    </RelativeLayout>
+</LinearLayout>

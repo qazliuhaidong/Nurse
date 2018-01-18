@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_Line"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e6e6" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <xapp.nurse.widget.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="96px"
+            android:layout_height="96px"
+            android:layout_margin="30px"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基础体检套餐"
+                android:textColor="@color/colorText"
+                android:textSize="26px" />
+            <LinearLayout
+                android:layout_marginTop="6px"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mshpName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘科"
+                    android:textColor="@color/colorText"
+                    android:textSize="24px" />
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_marginLeft="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="@color/colorText"
+                    android:textSize="24px" />
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_marginLeft="20px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23岁"
+                    android:textColor="@color/colorText"
+                    android:textSize="24px" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/arrangeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6px"
+                android:text="2017-10-19 16:30"
+                android:textColor="@color/Text_gray"
+                android:textSize="19px" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="30px"
+            android:src="@mipmap/ico_into" />
+    </LinearLayout>
+
+</LinearLayout>

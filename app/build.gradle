@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'//启用扩展支持直接使用ID
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "xapp.nurse"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 18
+        versionName "1.8"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def oldFile = output.outputFile
+//            def newName = '';
+//            if (variant.buildType.name.equals('release')) {
+//                def releaseApkName = '护士护跟_' + releaseCurrentDate() + '_Android_V' + defaultConfig.versionName + '.apk'
+//                output.outputFile = new File("D:\\Workspace\\as\\Documents\\Android正式版安装包", releaseApkName)
+//            }
+//        }
+//    }
+    //高版本生成脚本
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def newApkName =  "护士护理-" +releaseCurrentDate()+"-"+ variant.versionName + ".apk";
+            outputFileName = new File("/outputs/apks/" + variant.name, newApkName);
+        }
+    }
+}
+
+def releaseCurrentDate() {
+    return new Date().format("yyyy.MM.dd", TimeZone.getTimeZone("UTC"))
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    //    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //rxjava+retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.github.cpoopc:RetrofitRxCache:v1.0.5'
+    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.1'
+    compile 'com.github.czh235285:StatusBar:v1.3'
+    compile 'com.afollestad.material-dialogs:commons:0.9.4.3'
+    compile 'org.byteam.superadapter:superadapter:3.6.7'
+    //baseadapter
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    //没有使用特殊Header，可以不加这行
+    compile 'com.jph.takephoto:takephoto_library:4.0.3'
+    compile 'com.bigkoo:alertview:1.0.2'
+    compile project(':xnumberkeyboard')
+}

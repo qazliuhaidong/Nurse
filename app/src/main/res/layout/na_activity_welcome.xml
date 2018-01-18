@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10px"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="160px"
+            android:layout_height="80px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:paddingRight="80px"
+            android:src="@mipmap/topbar_back" />
+
+        <TextView
+            android:id="@+id/et_ser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textColor="#383838"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f2f2f2"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <xapp.nurse.widget.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350px"
+            android:src="@mipmap/boy_2x"></xapp.nurse.widget.CircleImageView>
+
+        <TextView
+            android:id="@+id/versionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="护士护工 V1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40px"
+            android:text="©2017 Sichuan Shuxiang. All rights reserved. " />
+    </RelativeLayout>
+
+
+</LinearLayout>

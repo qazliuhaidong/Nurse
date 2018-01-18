@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_order"
+        android:enabled="true"
+        android:icon="@mipmap/tab_ico_de_dd"
+        android:title="订单"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_msg"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+
+        android:id="@+id/menu_personal"
+        android:enabled="true"
+        android:icon="@mipmap/tab_ico_de_myxhdpi"
+        android:title="个人"
+        app:showAsAction="ifRoom" />
+
+</menu>

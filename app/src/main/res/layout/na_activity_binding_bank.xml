@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_binding_bank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+  >
+    <include layout="@layout/na_include_title"></include>
+    <TextView
+        android:paddingLeft="30px"
+        android:paddingTop="44px"
+        android:paddingBottom="44px"
+        android:text="请绑定持卡人本人的银行卡"
+        android:textSize="30px"
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="30px"
+            android:paddingTop="34px"
+            android:paddingBottom="34px"
+            android:textSize="30px"
+            android:text="持卡人"
+            android:textColor="@color/colorText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="填写真实姓名"
+            android:textSize="30px"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="30px"
+            android:paddingTop="34px"
+            android:paddingBottom="34px"
+            android:textSize="30px"
+            android:text="卡号"
+            android:textColor="@color/colorText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="填写"
+            android:textSize="30px"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/bg_shape_ok"
+        android:gravity="center"
+        android:padding="26px"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="32px" />
+
+
+
+
+
+
+</LinearLayout>

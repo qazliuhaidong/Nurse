@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+
+
+    <include layout="@layout/na_include_title"></include>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="30px"
+            android:text="资金账户"
+            android:textColor="@color/colorText"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/ico_into"
+            android:paddingRight="30px"
+            android:text="微信"
+            android:textColor="#666666"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingLeft="30px"
+            android:layout_marginTop="36px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现金额"
+            android:textColor="@color/colorText"
+            android:textSize="26px" />
+
+        <LinearLayout
+            android:paddingLeft="30px"
+            android:layout_marginTop="70px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ico_rmb_l"
+                android:textColor="@color/colorText"
+                 />
+
+            <EditText
+                android:id="@+id/et_withdraw"
+                style="@style/editText_style"
+                android:digits="123456789"
+                android:textSize="42px"
+                android:layout_marginLeft="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="30px"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fg_line" />
+        <TextView
+            android:padding="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用余额 256.00元"
+            android:textColor="@color/Text_gray"
+            android:textSize="26px" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/bg_shape_ok"
+        android:gravity="center"
+        android:padding="28px"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="30px" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.xnumberkeyboard.android.XNumberKeyboardView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/keyboardView"
+            android:focusableInTouchMode="true"
+            android:background="#b0b0b0"
+            android:keyTextColor="#000000"
+            android:focusable="true"
+            android:shadowRadius="0"
+            android:keyBackground="@drawable/selector_key_background"
+            app:xnkv_deleteBackgroundColor="#d2d2d2"
+            android:shadowColor="@android:color/transparent"
+            app:xnkv_deleteDrawable="@mipmap/keyboard_backspace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

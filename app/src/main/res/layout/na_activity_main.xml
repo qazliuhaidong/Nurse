@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_gray">
+
+    <FrameLayout
+        android:id="@+id/frg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bnv" />
+
+
+    <RelativeLayout
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/l_order"
+            android:layout_width="200px"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:paddingTop="10px"
+                android:paddingLeft="86px"
+                android:id="@+id/ivOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tab_order_nor" />
+            <TextView
+                android:id="@+id/tvOrder"
+                android:paddingTop="10px"
+                android:paddingLeft="86px"
+                android:text="订单"
+                android:textSize="21px"
+                android:textColor="@color/themeColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l_Personal"
+            android:layout_width="200px"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="right"
+                android:paddingRight="82px"
+                android:id="@+id/ivPersonal"
+                android:paddingTop="10px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tab_my_nor" />
+            <TextView
+                android:id="@+id/tvPersonal"
+                android:paddingRight="82px"
+                android:layout_gravity="right"
+                android:paddingTop="10px"
+                android:text="个人"
+                android:textSize="21px"
+                android:textColor="@color/Text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlQd"
+        android:layout_width="133px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="133px"
+            android:layout_height="133px"
+            android:background="@drawable/bg_shape_center"
+            android:gravity="center"
+            android:padding="40px"
+            android:text="抢单"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/shape_point"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/bg_shape_point" />
+    </RelativeLayout>
+
+</RelativeLayout>

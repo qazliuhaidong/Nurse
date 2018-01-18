@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bind_wallet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_gray"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/na_include_title"></include>
+    <TextView
+        android:layout_marginTop="17px"
+        android:layout_marginBottom="17px"
+        android:textColor="#666666"
+        android:textSize="24px"
+        android:layout_marginLeft="30px"
+        android:text="选择你要绑定的账户(用于提现操作)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/l_zfb"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="30px"
+            android:src="@mipmap/list_card_zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="支付宝"
+            android:textSize="26px"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_zfb"
+            android:text="未绑定"
+            android:textSize="26px"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="30px"
+            android:textColor="@color/themeColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="30px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/fg_line" />
+    <LinearLayout
+        android:id="@+id/l_wx"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="30px"
+            android:src="@mipmap/list_card_wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="微信"
+            android:textSize="26px"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_wx"
+            android:text="已绑定"
+            android:textSize="26px"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="30px"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

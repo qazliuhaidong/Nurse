@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/na_include_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_pending"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="20px"
+                android:text="待接单 0"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/d_26" />
+
+            <View
+                android:id="@+id/pending_line"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:background="@color/themeColor" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:background="#f2f2f2" />
+
+        <RelativeLayout
+            android:id="@+id/rl_completed"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="20px"
+                android:text="未开始 0"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/d_26" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/completed_line"
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:background="@color/themeColor"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/na_include_recycler1"></include>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="30px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="26px"
+            android:text="账单名称内容"
+            android:textColor="@color/colorText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="-500.00"
+            android:textColor="@color/colorText"
+            android:textSize="22px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="-5px"
+        android:layout_marginBottom="32px"
+        android:text="10-21 13.57"
+        android:textSize="19px"
+        android:textColor="@color/Text_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginLeft="30px"
+        android:background="@color/fg_line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"></View>
+
+
+</LinearLayout>

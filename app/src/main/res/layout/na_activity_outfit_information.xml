@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_outfit_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+   >
+    <include   layout="@layout/na_include_title"></include>
+
+    <RelativeLayout
+        android:layout_marginTop="22px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="姓名"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/d_26" />
+
+        <TextView
+            android:id="@+id/tv_name_information"
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="机构名称"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/d_26" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="机构代码"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/d_26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="CD0286548455"
+            android:textColor="@color/colorText"
+            android:textSize="22px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="联系人"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/d_26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="超哥"
+            android:textColor="@color/colorText"
+            android:textSize="26px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="2px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="联系电话"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/d_26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:layout_centerInParent="true"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:text="CD0286548455"
+            android:textColor="@color/colorText"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+</LinearLayout>

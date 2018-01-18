@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ai护工</string>
+
+    <!--condition-->
+    <string name="please_input_phone">请输入正确手机号</string>
+    <string name="please_input_code">请输入正确的验证码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="two_passwords_are_diff">两次密码不一样</string>
+    <string name="passs_not_less_six">密码不能小于6位！</string>
+</resources>
